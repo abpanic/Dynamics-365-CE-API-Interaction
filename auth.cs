@@ -1,38 +1,48 @@
-from msal import ConfidentialClientApplication
-import requests
-import json
+using Microsoft.Identity.Client;
+using System;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
 
-# Authentication details (replace with your own)
-client_id = "your_client_id"
-client_secret = "your_client_secret"
-tenant_id = "your_tenant_id"
-resource_url = "https://yourorganization.crm.dynamics.com"
+class Program
+{
+    static async Task Main(string[] args)
+    {
+        // Authentication details (replace with your own)
+        string clientId = "your_client_id";
+        string clientSecret = "your_client_secret";
+        string tenantId = "your_tenant_id";
+        string resourceUrl = "https://yourorganization.crm.dynamics.com";
 
-# Create a Confidential Client Application
-app = ConfidentialClientApplication(
-    client_id,
-    authority=f"https://login.microsoftonline.com/{tenant_id}",
-    client_credential=client_secret
-)
+        // Create a Confidential Client Application
+        IConfidentialClientApplication app = ConfidentialClientApplicationBuilder
+            .Create(clientId)
+            .WithClientSecret(clientSecret)
+            .WithAuthority(new Uri($"https://login.microsoftonline.com/{tenantId}"))
+            .Build();
 
-# Get OAuth token
-token_response = app.acquire_token_for_client(scopes=[resource_url + "/.default"])
-token = token_response['access_token']
+        // Acquire token
+        var result = await app.AcquireTokenForClient(new string[] { resourceUrl + "/.default" })
+            .ExecuteAsync();
 
-# Example: Retrieve Account records
-api_url = f"{resource_url}/api/data/v9.0/accounts"
-headers = {
-    'Authorization': f'Bearer {token}',
-    'Content-Type': 'application/json',
-    'OData-MaxVersion': '4.0',
-    'OData-Version': '4.0'
+        // Example: Retrieve Account records
+        string apiUrl = $"{resourceUrl}/api/data/v9.0/accounts";
+        using (var httpClient = new HttpClient())
+        {
+            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", result.AccessToken);
+
+            HttpResponseMessage response = await httpClient.GetAsync(apiUrl);
+
+            // Display retrieved data
+            if (response.IsSuccessStatusCode)
+            {
+                string content = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"Retrieved Data: {content}");
+            }
+            else
+            {
+                Console.WriteLine($"Error: {response.StatusCode} - {response.ReasonPhrase}");
+            }
+        }
+    }
 }
-response = requests.get(api_url, headers=headers)
-
-# Display retrieved data
-if response.status_code == 200:
-    accounts = response.json().get('value')
-    for account in accounts:
-        print(f"Account Name: {account['name']}")
-else:
-    print(f"Error: {response.status_code} - {response.text}")
