@@ -2,6 +2,10 @@
 
 This repository contains code examples in Python and C# for interacting with the Dynamics 365 Customer Engagement (CE) web API. The examples cover authentication, retrieving data, and managing token lifespan.
 
+To learn/know about authentication/session management and authorization in general: Authentication.pptx
+
+For Dynamics CE specific action: 
+
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
