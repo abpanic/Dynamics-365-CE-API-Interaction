@@ -25,4 +25,4 @@ This repository contains code examples in Python and C# for interacting with the
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/dynamics-365-api-interaction.git
+git clone https://github.com/abpanic/dynamics-365-api-interaction.git
