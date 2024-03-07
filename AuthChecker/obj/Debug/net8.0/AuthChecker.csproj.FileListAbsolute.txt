@@ -1,0 +1,5 @@
+C:\Users\Local User\Desktop\AuthChecker\obj\Debug\net8.0\AuthChecker.csproj.AssemblyReference.cache
+C:\Users\Local User\Desktop\AuthChecker\obj\Debug\net8.0\AuthChecker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Local User\Desktop\AuthChecker\obj\Debug\net8.0\AuthChecker.AssemblyInfoInputs.cache
+C:\Users\Local User\Desktop\AuthChecker\obj\Debug\net8.0\AuthChecker.AssemblyInfo.cs
+C:\Users\Local User\Desktop\AuthChecker\obj\Debug\net8.0\AuthChecker.csproj.CoreCompileInputs.cache

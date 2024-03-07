@@ -1,0 +1,9 @@
+{
+    "Dynamics365InstanceUrl": "https://yourorg.crm.dynamics.com",
+    "AuthType": 1, // 1 for Basic, 2 for OAuth
+    "Username": "your_username",
+    "Password": "your_password",
+    "ClientId": "your_client_id",
+    "ClientSecret": "your_client_secret",
+    "TenantId": "your_tenant_id"
+  }
