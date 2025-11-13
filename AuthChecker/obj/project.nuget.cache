@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h92DsHM0o3LbIIc7fqDtAsN7UHahvqzWVz3kCQNXGXG2N6CJt+IOPuV1/UjZbYD1VtzBF5FHp40p0871iHUR4Q==",
+  "dgSpecHash": "gtiKmqh9RwFyyIwYPZK1/SY4M1lS5acgTPv0R6sk92qHstKLOV1WBhOzFnW25yeMaCQCaBVBUeKwsx5WomS2WA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Local User\\Desktop\\AuthChecker\\AuthChecker.csproj",
+  "projectFilePath": "C:\\Users\\Local User\\Documents\\GitHub\\Dynamics-365-CE-API-Interaction\\AuthChecker\\AuthChecker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Local User\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
     "C:\\Users\\Local User\\.nuget\\packages\\microsoft.identity.client\\4.59.0\\microsoft.identity.client.4.59.0.nupkg.sha512",
@@ -97,5 +97,26 @@
     "C:\\Users\\Local User\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Local User\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Identity.Client' 4.59.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9",
+      "libraryId": "Microsoft.Identity.Client",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1901",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Identity.Client' 4.59.0 has a known low severity vulnerability, https://github.com/advisories/GHSA-x674-v45j-fwxw",
+      "libraryId": "Microsoft.Identity.Client",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

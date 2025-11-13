@@ -4,6 +4,12 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
+	  	<PackageId>AuthChecker-D365CE</PackageId>
+	  <Authors>Abhilash Panicker</Authors>
+	  <Description>Debug OAuth related access issues</Description>
+	  <PackageProjectUrl>https://github.com/abpanic/Dynamics-365-CE-API-Interaction/</PackageProjectUrl>
+	  <RepositoryUrl>https://github.com/abpanic/Dynamics-365-CE-API-Interaction/</RepositoryUrl>
+	  <PackageTags>d365</PackageTags>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 

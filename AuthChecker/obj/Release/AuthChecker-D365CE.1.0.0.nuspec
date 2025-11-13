@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>AuthChecker-D365CE</id>
+    <version>1.0.0</version>
+    <authors>Abhilash Panicker</authors>
+    <projectUrl>https://github.com/abpanic/Dynamics-365-CE-API-Interaction/</projectUrl>
+    <description>Debug OAuth related access issues</description>
+    <tags>d365</tags>
+    <repository type="git" url="https://github.com/abpanic/Dynamics-365-CE-API-Interaction/" commit="15b87ae0a6045ac9f20edd9d45467be0dae4444a" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Microsoft.Identity.Client" version="4.59.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.IdentityModel.Clients.ActiveDirectory" version="5.3.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Local User\Documents\GitHub\Dynamics-365-CE-API-Interaction\AuthChecker\bin\Release\net8.0\AuthChecker.runtimeconfig.json" target="lib\net8.0\AuthChecker.runtimeconfig.json" />
+    <file src="C:\Users\Local User\Documents\GitHub\Dynamics-365-CE-API-Interaction\AuthChecker\bin\Release\net8.0\AuthChecker.dll" target="lib\net8.0\AuthChecker.dll" />
+  </files>
+</package>
