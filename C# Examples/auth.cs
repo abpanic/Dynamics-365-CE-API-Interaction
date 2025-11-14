@@ -1,3 +1,5 @@
+// Synopsis: Demonstrates client-credentials authentication against Dataverse using MSAL
+// and performs a simple GET on /accounts to show authenticated access.
 using Microsoft.Identity.Client;
 using System;
 using System.Net.Http;

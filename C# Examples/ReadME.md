@@ -1,5 +1,10 @@
 Code sample from : https://github.com/microsoft/PowerApps-Samples/blob/master/dataverse/webapi/C%23-NETx/App.cs
 
+## Included Samples
+
+- `auth.cs` - Minimal client-credentials flow using MSAL to request a Dataverse access token and read `/api/data/v9.0/accounts`.
+- `tokenmgmt.cs` - Extends the auth sample to demonstrate how to check token expiry, refresh it, and retry Web API calls with the updated bearer token.
+
 ```C#
 using Microsoft.Extensions.Configuration;
 using Microsoft.Identity.Client;

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Debug OAuth related access issues")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef22b762b38e3f3a273411aa788616bb0a06b6dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac6f130b914fa7d3ad518a29ac9310cedf2bc1eb")]
 [assembly: System.Reflection.AssemblyProductAttribute("AuthChecker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AuthChecker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

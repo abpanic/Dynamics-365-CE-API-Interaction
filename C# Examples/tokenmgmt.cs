@@ -1,3 +1,5 @@
+// Synopsis: Builds on the auth sample to illustrate checking MSAL access token expiry,
+// refreshing it when necessary, and retrying Dataverse calls with the refreshed token.
 using Microsoft.Identity.Client;
 using System;
 using System.Net.Http;
